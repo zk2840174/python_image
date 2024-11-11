@@ -8,24 +8,15 @@ print(chroma_client)
 
 
 student_info = """
-Alexandra Thompson, a 19-year-old computer science sophomore with a 3.7 GPA,
-is a member of the programming and chess clubs who enjoys pizza, swimming, and hiking
-in her free time in hopes of working at a tech company after graduating from the University of Washington.
+더러워진 하수도를 청소하기 위해서는 베이킹소다와 구연산을 이용합니다. 
 """
 
 club_info = """
-The university chess club provides an outlet for students to come together and enjoy playing
-the classic strategy game of chess. Members of all skill levels are welcome, from beginners learning
-the rules to experienced tournament players. The club typically meets a few times per week to play casual games,
-participate in tournaments, analyze famous chess matches, and improve members' skills.
+구연산은 거품이 일어납니다. 곰팡이 제거에 효과적입니다. 
 """
 
 university_info = """
-The University of Washington, founded in 1861 in Seattle, is a public research university
-with over 45,000 students across three campuses in Seattle, Tacoma, and Bothell.
-As the flagship institution of the six public universities in Washington state,
-UW encompasses over 500 buildings and 20 million square feet of space,
-including one of the largest library systems in the world.
+겨울철에는 벽면에 곰팡이 많이 생깁니다. 
 """
 
 collection = chroma_client.create_collection(name="Students")
@@ -37,7 +28,7 @@ collection.add(
 )
 
 results = collection.query(
-    query_texts=["배구"],
+    query_texts=["세탁"],
     n_results=2
 )
 

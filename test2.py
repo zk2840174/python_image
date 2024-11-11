@@ -36,7 +36,7 @@ for image_file in os.listdir(image_folder):
     )
 
 
-new_image_path = "C:\\zzz\\IMG_0135.jpg"
+new_image_path = "D:\\ws\\images.jpg"
 new_embedding = get_image_embedding(new_image_path)
 
 print("=========================================================")
